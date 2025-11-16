@@ -16,7 +16,7 @@
     "macros": [
       {
         "menuName": "hellowWorld",
-        "functionName": "hellowWorld",
+        "functionName": "hellowWorld"
       }
     ]
   }
