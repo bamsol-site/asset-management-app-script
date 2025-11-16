@@ -3,6 +3,12 @@
 name: Deploy to Google Apps Script
 
 on:
+    workflow_call:
+        secrets:
+            OPTIONAL_TOKEN:
+                description: 'secrets.GAS_DEPLOYMENT_ID'
+                required: false
+
     push:
         branches:
             - main
