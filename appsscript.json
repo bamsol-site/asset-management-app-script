@@ -1,0 +1,23 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "first_learning",
+        "version": "0",
+        "libraryId": "1_RRe0WMQkmc90y1K82yfB5ft2zmda_q5D6e4Yvck0qL3z5BdC_eUSFVz",
+        "developmentMode": true
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [
+      {
+        "menuName": "hellowWorld",
+        "functionName": "hellowWorld",
+      }
+    ]
+  }
+}
