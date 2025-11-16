@@ -8,7 +8,6 @@ on:
             - main
 
 jobs:
-
     deploy:
         runs-on: ubuntu-latest
         steps:
@@ -31,8 +30,3 @@ jobs:
 
             - name: Push to  Apss Script
               run: clasp push -f
-
-    call-reusable:
-        uses: ./reusable.yaml
-        secrets:
-            OPTIONAL_TOKEN: ${{ secrets.GAS_DEPLOYMENT_ID }}
