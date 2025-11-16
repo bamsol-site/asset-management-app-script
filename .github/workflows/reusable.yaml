@@ -1,0 +1,14 @@
+on:
+    workflow_call:
+        secrets:
+            OPTIONAL_TOKEN:
+                description: 'Optional token'
+                required: false
+
+jobs:
+    do-something:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Secret 있는경우 실행
+              if: ${{ secrets.OPTIONAL_TOKEN != '' }}
+              run: echo "Using OPTIONAL_TOKEN"
