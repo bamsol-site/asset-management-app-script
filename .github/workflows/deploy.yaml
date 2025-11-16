@@ -32,7 +32,7 @@ jobs:
               run: clasp push -f
 
             - name: Deploy Apps Script
-              if: ${{ secrets.GAS_DEPLOYMENT_ID != '' }}
+              if: ${{ secrets.GAS_DEPLOYMENT_ID }}
               run: |
                 echo "GAS_DEPLOYMENT_ID secret found. Running clasp deploy..."
                 clasp deploy --deploymentId ${{ secrets.GAS_DEPLOYMENT_ID }} --description "CI deploy from GitHub Actions"
